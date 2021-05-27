@@ -14,6 +14,7 @@ run-devel:
 		-it --rm \
 		--net=host \
 		-e TERM=st-256color \
+		-v ${PWD}:${HOME}/app \
 		-v ${HOME}/.config/nvim/:${HOME}/.config/nvim \
 		-v ${HOME}/.config/tmux/:${HOME}/.config/tmux/ \
 		-v ${HOME}/.config/zsh/:${HOME}/.config/zsh/ \
